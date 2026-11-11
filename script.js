@@ -82,12 +82,9 @@ let v1 = "25";
 let v2 = "17";
 let v3 = "8";
 
-// Mbledhja pa konvertim (shkakton bashkim stringjesh)
+
 let rezultatiPaKonvertim = v1 + v2 + v3;
 console.log("Rezultati pa konvertim:", rezultatiPaKonvertim);
-// Shpjegim: Dejton si stringje, prandaj "+" i bashkon tekstualisht ("25" + "17" + "8" -> "25178").
-
-// Konvertimi në numra me Number()
 let numri1 = Number(v1);
 let numri2 = Number(v2);
 let numri3 = Number(v3);
@@ -115,16 +112,13 @@ console.log("Koha në orë (numër dhjetor):", kohaNeOre.toFixed(2));
 console.log("Minuta që mbeten pas ndarjes me 60 (%):", minutaMbetura);
 
 
+
+
+
 let stoku = 120;
 console.log("Stoku fillestar në depo:", stoku);
-
-stoku -= 18; // Shiten 18
 console.log("Pas shitjes së parë (-18):", stoku);
-
-stoku -= 27; // Shiten edhe 27
 console.log("Pas shitjes së dytë (-27):", stoku);
-
-stoku += 35; // Shtohen 35 njësi të reja
 console.log("Pas shtimit të njësive të reja (+35):", stoku);
 
 let cmimiPerNjesi = 6.75;
@@ -132,3 +126,17 @@ let vleraStokutPeryndimtar = stoku * cmimiPerNjesi;
 
 console.log("Stoku përfundimtar (sasia):", stoku);
 console.log("Vlera e stokut përfundimtar në euro:", vleraStokutPeryndimtar);
+
+let flete Pune = 157; // ose fletëPune
+let fletePerStudent = 6;
+
+// Përdorimi i parseInt() mbi rezultatin e pjesëtimit për grupe të plota
+let grupet = parseInt(fletePune / fletePerStudent);
+let fleteMbetura = fletePune % fletePerStudent;
+
+console.log("Numri i grupeve të plota:", grupet);
+console.log("Fletët e mbetura (%):", fleteMbetura);
+
+// Kontrolli i llogaritjes: (grupet * 6) + mbetja
+let kontrolli = (grupet * 6) + fleteMbetura;
+console.log("Kontrolli ((grupet * 6) + mbetja):", kontrolli);
