@@ -74,3 +74,28 @@ console.log("Hapi 3 - Çmimi pas zbritjes:", cmimiPasZbritjes);
 
 let vleraPerrfundimtare = cmimiPasZbritjes + 4; // Shtohet 4 € transport
 console.log("Hapi 4 - Vlera përfundimtare (me 4 € transport):", vleraPerrfundimtare);
+
+
+
+
+let v1 = "25";
+let v2 = "17";
+let v3 = "8";
+
+// Mbledhja pa konvertim (shkakton bashkim stringjesh)
+let rezultatiPaKonvertim = v1 + v2 + v3;
+console.log("Rezultati pa konvertim:", rezultatiPaKonvertim);
+// Shpjegim: Dejton si stringje, prandaj "+" i bashkon tekstualisht ("25" + "17" + "8" -> "25178").
+
+// Konvertimi në numra me Number()
+let numri1 = Number(v1);
+let numri2 = Number(v2);
+let numri3 = Number(v3);
+
+let shuma = numri1 + numri2 + numri3;
+let mesatarja = shuma / 3;
+
+console.log("Shuma:", shuma);
+console.log("Mesatarja:", mesatarja);
+console.log("Tipi i shumës:", typeof shuma);
+console.log("Tipi i mesatares:", typeof mesatarja);
