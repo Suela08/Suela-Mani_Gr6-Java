@@ -113,3 +113,22 @@ let minutaMbetura = gjithsejMinuta % 60;
 console.log("Gjithsej minuta:", gjithsejMinuta);
 console.log("Koha në orë (numër dhjetor):", kohaNeOre.toFixed(2));
 console.log("Minuta që mbeten pas ndarjes me 60 (%):", minutaMbetura);
+
+
+let stoku = 120;
+console.log("Stoku fillestar në depo:", stoku);
+
+stoku -= 18; // Shiten 18
+console.log("Pas shitjes së parë (-18):", stoku);
+
+stoku -= 27; // Shiten edhe 27
+console.log("Pas shitjes së dytë (-27):", stoku);
+
+stoku += 35; // Shtohen 35 njësi të reja
+console.log("Pas shtimit të njësive të reja (+35):", stoku);
+
+let cmimiPerNjesi = 6.75;
+let vleraStokutPeryndimtar = stoku * cmimiPerNjesi;
+
+console.log("Stoku përfundimtar (sasia):", stoku);
+console.log("Vlera e stokut përfundimtar në euro:", vleraStokutPeryndimtar);
