@@ -162,3 +162,28 @@ let shumaFinale = shumaPorosise + tarifaSherbimi;
 
 console.log("Shuma finale me dy shifra pas presjes:", shumaFinale.toFixed(2));
 console.log("Tipi i vlerës së formatuar:", typeof shumaFinale.toFixed(2));
+
+
+let pjesemarres = 45;
+let pagesaSecilit = 12;
+
+let teArdhurat = pjesemarres * pagesaSecilit;
+
+let salla = 180;
+let materialet = 95;
+let reklama = 60;
+
+let shpenzimetTotale = salla + materialet + reklama;
+let diferenca = teArdhurat - shpenzimetTotale;
+
+console.log("Të ardhurat:", teArdhurat);
+console.log("Shpenzimet totale:", shpenzimetTotale);
+console.log("Diferenca (fitimi/humbja):", diferenca);
+
+
+shpenzimetTotale += 25;
+let diferencaRe = teArdhurat - shpenzimetTotale;
+
+console.log("--- Raporti pas shpenzimeve të paparashikuara ---");
+console.log("Shpenzimet e reja totale:", shpenzimetTotale);
+console.log("Diferenca e re:", diferencaRe);
