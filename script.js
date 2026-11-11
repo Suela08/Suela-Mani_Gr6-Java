@@ -130,13 +130,35 @@ console.log("Vlera e stokut përfundimtar në euro:", vleraStokutPeryndimtar);
 let flete Pune = 157; // ose fletëPune
 let fletePerStudent = 6;
 
-// Përdorimi i parseInt() mbi rezultatin e pjesëtimit për grupe të plota
+
 let grupet = parseInt(fletePune / fletePerStudent);
 let fleteMbetura = fletePune % fletePerStudent;
 
 console.log("Numri i grupeve të plota:", grupet);
 console.log("Fletët e mbetura (%):", fleteMbetura);
 
-// Kontrolli i llogaritjes: (grupet * 6) + mbetja
 let kontrolli = (grupet * 6) + fleteMbetura;
 console.log("Kontrolli ((grupet * 6) + mbetja):", kontrolli);
+
+
+
+let cmimi1 = Number("19.90");
+let sasia1 = 2;
+
+let cmimi2 = Number("8.50");
+let sasia2 = 3;
+
+let shumaArtikulli1 = cmimi1 * sasia1;
+let shumaArtikulli2 = cmimi2 * sasia2;
+let shumaPorosise = shumaArtikulli1 + shumaArtikulli2;
+
+console.log("Totali i artikullit 1:", shumaArtikulli1);
+console.log("Totali i artikullit 2:", shumaArtikulli2);
+console.log("Shuma e porosisë (pa taksë):", shumaPorosise);
+
+
+let tarifaSherbimi = shumaPorosise * 0.10;
+let shumaFinale = shumaPorosise + tarifaSherbimi;
+
+console.log("Shuma finale me dy shifra pas presjes:", shumaFinale.toFixed(2));
+console.log("Tipi i vlerës së formatuar:", typeof shumaFinale.toFixed(2));
