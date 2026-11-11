@@ -53,3 +53,24 @@ let mbetjaSecilit = buxhetiFillestar - pjesaPerPerson;
 console.log("Kosto totale e udhëtimit është " + kostoTotale + " euro.");
 console.log("Pjesa që i takon secilit person është " + pjesaPerPerson + " euro.");
 console.log("Nëse secili ka buxhet prej 80 eurosh, secilit i mbeten " + mbetjaSecilit + " euro.");
+
+
+
+
+let sasiaProdukti1 = 2;
+let cmimiProdukti1 = 35;
+
+let sasiaProdukti2 = 1;
+let cmimiProdukti2 = 24;
+
+let cmimiParaZbritjes = (sasiaProdukti1 * cmimiProdukti1) + (sasiaProdukti2 * cmimiProdukti2);
+console.log("Hapi 1 - Çmimi para zbritjes:", cmimiParaZbritjes);
+
+let shumaZbritjes = cmimiParaZbritjes * 0.15;
+console.log("Hapi 2 - Shuma e zbritjes prej 15%:", shumaZbritjes);
+
+let cmimiPasZbritjes = cmimiParaZbritjes - shumaZbritjes;
+console.log("Hapi 3 - Çmimi pas zbritjes:", cmimiPasZbritjes);
+
+let vleraPerrfundimtare = cmimiPasZbritjes + 4; // Shtohet 4 € transport
+console.log("Hapi 4 - Vlera përfundimtare (me 4 € transport):", vleraPerrfundimtare);
