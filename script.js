@@ -99,3 +99,17 @@ console.log("Shuma:", shuma);
 console.log("Mesatarja:", mesatarja);
 console.log("Tipi i shumës:", typeof shuma);
 console.log("Tipi i mesatares:", typeof mesatarja);
+
+
+let hënën = 95;
+let martën = 80;
+let mërkurën = 115;
+
+let gjithsejMinuta = hënën + martën + mërkurën;
+let kohaNeOre = gjithsejMinuta / 60;
+
+let minutaMbetura = gjithsejMinuta % 60;
+
+console.log("Gjithsej minuta:", gjithsejMinuta);
+console.log("Koha në orë (numër dhjetor):", kohaNeOre.toFixed(2));
+console.log("Minuta që mbeten pas ndarjes me 60 (%):", minutaMbetura);
